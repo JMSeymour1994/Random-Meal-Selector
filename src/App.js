@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Test
+          Random Meal Selector
         </a>
       </header>
     </div>
