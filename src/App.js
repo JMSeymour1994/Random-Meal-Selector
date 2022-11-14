@@ -7,17 +7,38 @@ import {NumOfMeals, Meals} from './helperFunctions';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Random Meal Selector</h1>
-      </header>
-      <div className='row'>
-        <div className='d-flex col justify-content-end align-items-center'>
-          <p>Select the number of meals</p>
+
+      {/* Header */}
+      <section id='header' className='p-5'>
+        <div className='container'>
+          <header className="App-header">
+            <h1>Random Meal Selector</h1>
+          </header>
         </div>
-        <div className="num-of-meals-dropdown col">
-          <NumOfMeals/>
+      </section>
+
+      {/* Parameter selection */}
+
+      <section id='parameters' className='px-5 pb-5'>
+        <div className='container'>
+          <div className='row'>
+            <div className='d-flex col-7 justify-content-end align-items-center pb-4'>
+              <p>Select the number of meals:</p>
+            </div>
+            <div className="num-of-meals-dropdown col-5">
+              <NumOfMeals/>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='d-flex col-7 justify-content-end pb-4'>
+              <p>Output:</p>
+            </div>
+            <div className="meals-output col-5">
+              <Meals/>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
     </div>
   );
